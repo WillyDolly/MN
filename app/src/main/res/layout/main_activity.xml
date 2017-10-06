@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/ibHethong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Hệ thống"
+            android:onClick="Hethong"/>
+        <ImageButton
+            android:id="@+id/ibIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/sym_call_incoming"
+            android:contentDescription="Nhớ"
+            android:onClick="Nho"/>
+        <ImageButton
+            android:id="@+id/ibOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/sym_call_outgoing"
+            android:contentDescription="Hồi Tưởng"/>
+    </LinearLayout>
+
+    <com.popland.pop.mn.DeactiveViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"/>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fragmentContainer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/linearLayout"/>-->
+</RelativeLayout>

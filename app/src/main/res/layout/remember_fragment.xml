@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#56564f">
+    <TextSwitcher
+        android:id="@+id/textSwitcher"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <ProgressBar
+        android:id="@+id/circleProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar_circle"
+        android:layout_centerInParent="true"
+        android:rotation="-90" />
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/llNumberPicker"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_number"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Limit"
+            android:id="@+id/tvNumberLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tvNumber"
+            android:text="1 số"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:text="Further"
+            android:id="@+id/tvNumberFurther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sbNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="99"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Limit"
+            android:id="@+id/tvTimeLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:text="5000 ms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:text="Further"
+            android:id="@+id/tvTimeFurther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+           android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sbTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="49"/>
+
+    <ImageButton
+        android:id="@+id/ibOK"
+        android:src="@android:drawable/btn_radio"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:textColor="#ccff00"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/edtWord"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#ccff00"
+        android:gravity="left|center_vertical"
+        android:layout_toRightOf="@+id/tvNumber" />
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#a1f7f4"
+        android:layout_below="@+id/tvNumber"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ivPic">
+        <ImageButton
+            android:id="@+id/ibGallery"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ibPhoto"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ibSave"
+            android:src="@android:drawable/ic_menu_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

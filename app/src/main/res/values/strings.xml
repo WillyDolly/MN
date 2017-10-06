@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MN</string>
+    <string name="pick_number">Tôi có thể nhớ</string>
+    <string name="bat_dau">Bắt Đầu</string>
+    <string name="he_thong">Hãy tự tạo hệ thống ghi nhớ số của riêng mình.</string>
+    <string name="nho">Tưởng tượng một câu chuyện hài hước và sinh động.</string>
+    <string name="hoi_tuong">Nhớ lại những con số trong câu chuyện của bạn.</string>
+    <string-array name="MajorSystem">
+        <item>S/X</item>
+        <item>T</item>
+        <item>N</item>
+        <item>M</item>
+        <item>R/Q</item>
+        <item>L</item>
+        <item>G</item>
+        <item>K/C</item>
+        <item>V/D</item>
+        <item>B/P</item>
+    </string-array>
+</resources>
